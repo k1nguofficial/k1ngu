@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
+
     <div class="container nav-bar">
 
         <div class="left">
@@ -18,10 +20,50 @@
         <div class="right">
             <i class='bx bx-menu bx-md'></i>
         </div>
-        
+
     </div>
-    
+
+    <section class="container hero-section">
+
+        <div class="hero-title">
+            <p>Worldwide © 2024</p>
+            <h1 class="hero-head">
+                Web Designer <br>
+                & UI/UX Designer
+            </h1>
+            <p>A freelance web designer and <br>
+            front-end developer</p>
+        </div>
+
+    </section>
+
+
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const myText = new SplitType('.hero-head')
+
+
+        gsap.to('.char', {
+            y: 0,
+            stagger: 0.005,
+            delay: 0.7,
+            duration: 0.2
+        })
+        
+        gsap.to('.nav-bar', {
+            y: 0,
+            stagger: 10,
+            delay: 0.5,
+            duration: 0.2
+        })
+
+    </script>
 </body>
+
 </html>

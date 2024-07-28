@@ -5,6 +5,10 @@
     font-family: 'Neue Montreal', sans-serif;
 }
 
+body {
+    background-color: #F1F0EE;
+}
+
 h6 {
     font-size: 16pt;
 }
@@ -29,16 +33,6 @@ h4, h5, h6 {
     margin-right: 27px;
 }
 
-.nav-bar {
-    margin-top: 27px;
-    height: 25px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
 
 
 /* xs */
@@ -50,12 +44,49 @@ h4, h5, h6 {
     }
 
     .nav-bar {
+        margin-top: 27px;
         height: 25px;
         display: flex;
         width: auto;
         align-items: center;
         justify-content: space-between;
     }
+
+    .nav-bar {
+        transform: translateY(-115px);
+        transition: transform .5s;
+    }
+
+    .hero-section {
+        width: auto;
+        height: 100svh;
+    }
+
+    .hero-title {
+        padding-top: 15rem;
+    }
+
+    .hero-title p {
+        font-weight: 300;
+    }
+
+    .hero-head {
+        font-weight: 500;
+        font-size: 24pt;
+        line-height: 120%;
+    }
+
+    .hero-title h1 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+    }
+    
+
+    
+    .char {
+        transform: translateY(115px);
+        transition: transform .2s;
+    }
+
 
 }
 

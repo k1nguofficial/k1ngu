@@ -75,7 +75,7 @@ h4, h5, h6 {
         font-size: 24pt;
         line-height: 120%;
     }
-    
+
     .hero-2 {
         font-weight: 600;
         font-size: 24pt;
@@ -83,18 +83,35 @@ h4, h5, h6 {
     }
 
     .hero-title h1 {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
-    }
-    
-
-    
-    .char {
-        transform: translateY(115px);
-        transition: transform .2s;
-    }
-
-    .p-text {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .hero1-char {
+        transform: translateY(32px);
+        transition: transform .1s;
+    }
+
+    .hero2-char {
+        transform: translateY(32px);
+        transition: transform .1s;
+    }
+
+    .p-top {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .hero-text {
+        transform: translateY(32px);
+        transition: transform .1s;
+    }
+
+    .p-bottom {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .hero2-text {
+        transform: translateY(34px);
+        transition: transform .1s;
     }
 
 

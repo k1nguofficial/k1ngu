@@ -27,13 +27,13 @@
     <section class="container hero-section">
 
         <div class="hero-title">
-            <p class="p-text">Worldwide © 2024</p>
+            <p class="p-top">Worldwide © 2024</p>
             <h1 class="hero-head">
                 Web Designer
             </h1>
             <h1 class="hero-2">& UI/UX Designer</h1>
-            <p class="p-text">A freelance web designer and <br>
-            front-end developer</p>
+            <p class="p-bottom">A freelance web designer and <br>
+                front-end developer</p>
         </div>
 
     </section>
@@ -47,24 +47,55 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        const myText = new SplitType('.hero-head')
-        const myText2 = new SplitType('.hero-2')
-        const myText3 = new SplitType('.p-text')
+        const myText = new SplitType('.hero-head', {
+            types: 'chars',
+            charClass: 'hero1-char'
+        })
 
+        const myText2 = new SplitType('.hero-2', {
+            types: 'chars',
+            charClass: 'hero2-char'
+        })
 
-        gsap.to('.word', {
+        const myText3 = new SplitType('.p-top', {
+            types: 'chars',
+            charClass: 'hero-text'
+        })
+
+        const myText4 = new SplitType('.p-bottom', {
+            types: 'chars',
+            charClass: 'hero2-text'
+        })
+
+        gsap.to('.hero2-text', {
+            y: 0,
+            stagger: 0.002,
+            delay: 0.7,
+            duration: 0.3
+        })
+
+        gsap.to('.hero-text', {
+            y: 0,
+            stagger: 0.010,
+            delay: 0.7,
+            duration: 0.3
+        })
+
+        gsap.to('.hero1-char', {
             y: 0,
             stagger: 0.010,
             delay: 0.5,
-            duration: 0.5
+            duration: 0.3
         })
 
-        gsap.to('.char', {
+        gsap.to('.hero2-char', {
             y: 0,
-            stagger: 0.010,
-            delay: 0.5,
-            duration: 0.5
+            stagger: 0.003,
+            delay: 0.6,
+            duration: 0.3
         })
+
+
 
         gsap.to('.nav-bar', {
             y: 0,

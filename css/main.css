@@ -36,11 +36,11 @@ h4, h5, h6 {
 
 
 /* xs */
-@media (min-width: 390px) {
+@media (min-width: 380px) {
 
 
     .container {
-        max-width: 390px;
+        max-width: 380px;
     }
 
     .nav-bar {
